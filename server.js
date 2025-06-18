@@ -45,8 +45,9 @@ app.use(express.static(path.join(_dirname,"/frontend/dist")))
 
 
 
-const server = app.listen("https://game-diei.onrender.com");
+const PORT = process.env.PORT || 5000;
 
+const server=app.listen(PORT);
 const { Server } = require("socket.io");
 const userModel = require("./Models/userModel.js");
 const gamesSocketController = require("./sockets/gamesSocket.js");
