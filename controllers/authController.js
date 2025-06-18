@@ -6,7 +6,7 @@ const bcrypt = require("bcryptjs");
 const cookieOptions = {
   httpOnly: true,
   // secure: process.env.NODE_ENV === "production", // Uncomment this in production
-  sameSite: "strict",
+  sameSite: "None",
   // maxAge: 3600000, // 1 hour
 };
 
