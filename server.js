@@ -45,7 +45,7 @@ app.use(express.static(path.join(_dirname,"/frontend/dist")))
 
 
 
-const server = app.listen("5000");
+const server = app.listen("https://game-diei.onrender.com");
 
 const { Server } = require("socket.io");
 const userModel = require("./Models/userModel.js");
