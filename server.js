@@ -21,7 +21,7 @@ const chessSocketController = require("./sockets/chessSockets");
 app.use(cookies());
 app.use(
   cors({
-    origin: "https://frontend1-h2pg.onrender.com/",
+    origin: "https://frontend1-h2pg.onrender.com",
     credentials: true,
   })
 );
@@ -53,7 +53,7 @@ const gamesSocketController = require("./sockets/gamesSocket.js");
 const io = new Server(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "https://frontend1-h2pg.onrender.com/",
+    origin: "https://frontend1-h2pg.onrender.com",
   },
   credentials:true
 });
