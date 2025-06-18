@@ -41,7 +41,6 @@ app.use("/api/ttt", tttRouter);
 app.use("/api/chess", chessRouter);
 app.use("/api/req",reqRouter);
 
-app.use(express.static(path.join(_dirname,"/frontend/dist")))
 
 
 
