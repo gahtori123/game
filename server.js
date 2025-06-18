@@ -12,13 +12,13 @@ const reqRouter = require("./routers/reqRouter");
 const chessRouter = require("./routers/chessRouter");
 const path=require("path")
 
-
+app.use(cookies());
 const tttSocketController = require("./sockets/tttSocket")
 const chessSocketController = require("./sockets/chessSockets");
 
  const _dirname=path.resolve();
 
-app.use(cookies());
+
 app.use(
   cors({
     origin: "https://frontend1-h2pg.onrender.com",
