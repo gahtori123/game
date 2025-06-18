@@ -21,7 +21,7 @@ const chessSocketController = require("./sockets/chessSockets");
 
 app.use(
   cors({
-     origin: "https://frontend1-h2pg.onrender.com"
+     origin: "https://frontend1-h2pg.onrender.com",
     credentials: true,
   })
 );
