@@ -51,11 +51,10 @@ const { Server } = require("socket.io");
 const userModel = require("./Models/userModel.js");
 const gamesSocketController = require("./sockets/gamesSocket.js");
 const io = new Server(server, {
-  pingTimeout: 60000,
   cors: {
-     origin: "https://frontend1-h2pg.onrender.com",
-  },
-  credentials:true
+    origin: "https://frontend1-h2pg.onrender.com",
+    credentials: true,
+  }
 });
 
 const tic=io.of("/ttt")
